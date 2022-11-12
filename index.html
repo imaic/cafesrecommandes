@@ -22,13 +22,25 @@
 
             </div>
             <div id="search_inner2"><button id="search_button">検索する</button></div>
-            
+            <div id="search_result"></div>
         </div>
     </details>
     <details>
         <summary id="near">近くのカフェ</summary>
         <div id="near_body">
 
+        </div>
+    </details>
+    <details>
+        <summary id="station">駅チカのカフェ</summary>
+        <div id="station_body">
+            <select name="station_menu" id="station_menu">
+                <option value="0" selected>津田沼駅</option>
+                <option value="1">新津田沼駅</option>
+                <option value="2">京成津田沼駅</option>
+            </select>
+            <button id="station_search">さがす</button>
+            <div id="station_result"></div>
         </div>
     </details>
     <details open>
