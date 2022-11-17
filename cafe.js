@@ -132,7 +132,8 @@ document.querySelector('#station_search').addEventListener( 'click', () => {
     let lng = station[ station_number ].position.x; // longitude
     let lat = station[ station_number ].position.y; // latitude
 
-    shop.sort( (a,b) => ((lng-a.position.x)**2 + (lat-a.position.y)**2) - ((lng-b.position.x)**2 + (lat-b.position.y)**2) );
+    let copied = [...shop];
+    copied.sort( (a,b) => ((lng-a.position.x)**2 + (lat-a.position.y)**2) - ((lng-b.position.x)**2 + (lat-b.position.y)**2) );
 
     let result = document.querySelector('#station_result');
     result.innerHTML = '';
@@ -140,7 +141,7 @@ document.querySelector('#station_search').addEventListener( 'click', () => {
 
     for( let i=0; i<5; i++ ) {
         let shp_element = document.createElement('p');
-        shp_element.innerText = shop[i].name;
+        shp_element.innerText = copied[i].name;
         result.appendChild( shp_element );
     }
 });
@@ -152,7 +153,8 @@ document.querySelector('#near_search').addEventListener( 'click', () => {
         let lat = position.coords.latitude;
         console.log( {lng, lat});
 
-        shop.sort( (a,b) => ((lng-a.position.x)**2 + (lat-a.position.y)**2) - ((lng-b.position.x)**2 + (lat-b.position.y)**2) );
+        let copied = [...shop];
+        copied.sort( (a,b) => ((lng-a.position.x)**2 + (lat-a.position.y)**2) - ((lng-b.position.x)**2 + (lat-b.position.y)**2) );
 
         let result = document.querySelector('#near_result');
         result.innerHTML = '';
@@ -160,7 +162,7 @@ document.querySelector('#near_search').addEventListener( 'click', () => {
 
         for( let i=0; i<5; i++ ) {
             let shp_element = document.createElement('p');
-            shp_element.innerText = shop[i].name;
+            shp_element.innerText = copied[i].name;
             result.appendChild( shp_element );
         }
     }, (error) => {
