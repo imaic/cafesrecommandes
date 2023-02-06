@@ -23,11 +23,11 @@ const shop = [
  { name: "檸檬の家", position: { x: 140.023276, y: 35.690186 } },
  { name: "紅茶とシトラス", position: { x: 140.023587, y: 35.690835 } },
  { name: "チーズケーキ専門店　みるく", position: { x: 140.025030, y: 35.690656 } },
- { name: "HUNGRY　sugar"}
- { name: "オグマノ家"}
- { name: "雪の宿　ホワイト"}
- { name: "TSUDANUMA　テラス"}
- { name: "Daily　STORE"}
+//  { name: "HUNGRY　sugar"}
+//  { name: "オグマノ家"}
+//  { name: "雪の宿　ホワイト"}
+//  { name: "TSUDANUMA　テラス"}
+//  { name: "Daily　STORE"}
 ];
 
 /**
