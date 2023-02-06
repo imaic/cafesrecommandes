@@ -6,24 +6,28 @@
  * @property {number} position.y    お店の位置（北緯）
  */
 const shop = [
- { name: "喫茶　曳舟", position: { x: 139.816565, y: 35.717885 } },
- { name: "錦糸町カフェ", position: { x: 139.814419, y: 35.696927 } },
- { name: "マクドナルド京成津田沼駅前店", position: { x: 140.023010, y: 35.682806 } },
- { name: "セブンイレブン京成津田沼駅前店", position: { x: 140.023718, y: 35.684113 } },
- { name: "コーヒーハウスチャオ", position: { x: 140.024030, y: 35.683442 } },
- { name: "ペンネん・ネネム", position: { x: 140.022978, y: 35.682092 } },
- { name: "珈琲屋からす", position: { x: 140.024606, y: 35.682127 } },
- { name: "BROWN SOUND COFFEE", position: { x: 140.022182, y: 35.685886 } },
- { name: "タリーズコーヒーモリシア津田沼", position: { x: 140.019414, y: 35.689951 } },
- { name: "サンマルクカフェモリシア津田沼", position: { x: 140.019237, y: 35.689999 } },
- { name: "スターバックスコーヒー TSUTAYA モリシア津田沼", position: { x: 140.018764, y: 35.690016 } },
- { name: "ドトールコーヒーショップ津田沼南口店", position: { x: 140.018882, y: 35.690595 } },
- { name: "エクセルシオールカフェ津田沼北口店", position: { x: 140.020916, y: 35.691122 } },
- { name: "スターバックスコーヒー ミーナ津田沼店", position: { x: 140.023131, y: 35.689694 } },
- { name: "カフェ・ベローチェ新津田沼店", position: { x: 140.023276, y: 35.690186 } },
- { name: "タリーズコーヒーイオンモール津田沼", position: { x: 140.023587, y: 35.690835 } },
- { name: "珈琲館イオンモール津田沼店", position: { x: 140.025030, y: 35.690656 } },
-
+ { name: "喫茶　スズキ", position: { x: 139.816565, y: 35.717885 } },
+ { name: "喫茶　津田沼", position: { x: 139.814419, y: 35.696927 } },
+ { name: "マチナカコーヒー", position: { x: 140.023010, y: 35.682806 } },
+ { name: "GOOD　coffee", position: { x: 140.023718, y: 35.684113 } },
+ { name: "HARUKAZE　COFFEE", position: { x: 140.024030, y: 35.683442 } },
+ { name: "京成珈琲", position: { x: 140.022978, y: 35.682092 } },
+ { name: "珈琲の店　ブルドック", position: { x: 140.024606, y: 35.682127 } },
+ { name: "カフェ　M", position: { x: 140.022182, y: 35.685886 } },
+ { name: "cafe　茶ノ間", position: { x: 140.019414, y: 35.689951 } },
+ { name: "津田沼　cafe", position: { x: 140.019237, y: 35.689999 } },
+ { name: "cafe＆dining　きのこ", position: { x: 140.018764, y: 35.690016 } },
+ { name: "小さなcafe　ベル", position: { x: 140.018882, y: 35.690595 } },
+ { name: "hamburgershop", position: { x: 140.020916, y: 35.691122 } },
+ { name: "coffee　shop　natural", position: { x: 140.023131, y: 35.689694 } },
+ { name: "檸檬の家", position: { x: 140.023276, y: 35.690186 } },
+ { name: "紅茶とシトラス", position: { x: 140.023587, y: 35.690835 } },
+ { name: "チーズケーキ専門店　みるく", position: { x: 140.025030, y: 35.690656 } },
+ { name: "HUNGRY　sugar"}
+ { name: "オグマノ家"}
+ { name: "雪の宿　ホワイト"}
+ { name: "TSUDANUMA　テラス"}
+ { name: "Daily　STORE"}
 ];
 
 /**
@@ -56,10 +60,11 @@ const tag = [
     "ディナー",
     "豆を販売している",
     "デート",
+    "女子会",
     "デカフェ",
     "プリン",
     "ケーキ",
-    "パスタ",
+    "古民家",
     "駅チカ",
     "男性でも入りやすい",
 ];
@@ -75,6 +80,24 @@ const tag_shop = [
     { tag: 0, shop: 1 },
     { tag: 1, shop: 0 },
     { tag: 2, shop: 1 },
+    { tag: 0, shop: 2},
+    { tag: 0, shop: 8},
+    { tag: 0, shop: 9},
+    { tag: 0, shop: 10},
+    { tag: 0, shop: 11},
+    { tag: 0, shop: 13},
+    { tag: 0, shop: 15},
+    { tag: 1, shop: 2},
+    { tag: 1, shop: 8},
+    { tag: 1, shop: 9},
+    { tag: 1, shop: 10},
+    { tag: 1, shop: 11},
+    { tag: 1, shop: 13},
+    { tag: 1, shop: 15},
+    { tag: 2, shop: 10},
+    { tag: 2, shop: 13},
+    { tag: 3, shop: 2},
+    { tag: 4, shop: 2},
 ]
 
 const search_inner1 = document.querySelector('#search_inner1');
